@@ -6,6 +6,8 @@ For more detail, please visit:
 
 [Spring Boot with Swagger 3 example](https://www.bezkoder.com/spring-boot-swagger-3/)
 
+https://www.bezkoder.com/spring-boot-swagger-3/
+
 To run the application type this command in VSCode Terminal Window:
 
 ```
