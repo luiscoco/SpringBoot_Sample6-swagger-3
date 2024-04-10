@@ -462,6 +462,23 @@ public class OpenAPIConfig {
 }
 ```
 
+### 2.8. resources/application.properties file 
+
+```
+#springdoc.api-docs.enabled=false
+#springdoc.swagger-ui.enabled=false
+#springdoc.packages-to-scan=com.bezkoder.spring.swagger.controller
+springdoc.swagger-ui.path=/bezkoder-documentation
+springdoc.api-docs.path=/bezkoder-api-docs
+#springdoc.swagger-ui.operationsSorter=method
+#springdoc.swagger-ui.tagsSorter=alpha
+springdoc.swagger-ui.tryItOutEnabled=true
+springdoc.swagger-ui.filter=true
+
+bezkoder.openapi.dev-url=http://localhost:8080
+bezkoder.openapi.prod-url=https://bezkoder-api.com
+```
+
 ## 3. How to run the application type this command in VSCode Terminal Window:
 
 ```
