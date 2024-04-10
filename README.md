@@ -462,7 +462,21 @@ public class OpenAPIConfig {
 }
 ```
 
-### 2.8. resources/application.properties file 
+### 2.8. Swagger Configuration in Spring Boot
+
+We can configure our API documentation by specifying properties in the spring configuration file
+
+These properties can be classified into OpenAPI and Swagger UI properties
+
+OpenAPI properties specify how the project should be scanned to identify API endpoints and create documentation based on them
+
+Swagger UI properties helps us to customize the user interface of our API documentation
+
+All of these properties start with the prefix springdoc
+
+For a complete list of these properties and their purposes, please visit Springdoc-openapi Properties
+
+The following is a sample of a configuration you can use:
 
 ```
 #springdoc.api-docs.enabled=false
@@ -478,6 +492,34 @@ springdoc.swagger-ui.filter=true
 bezkoder.openapi.dev-url=http://localhost:8080
 bezkoder.openapi.prod-url=https://bezkoder-api.com
 ```
+
+– Use **api-docs.enabled=false** if you want to disable springdoc-openapi endpoints
+
+– Use **swagger-ui.enabled=false** to disable the swagger-ui endpoint
+
+– **api-docs.path** is for custom path of the OpenAPI documentation in Json format. Now it is **http://localhost:8080/bezkoder-api-docs**
+
+– **swagger-ui.path** is for custom path of the Swagger documentation. 
+
+If you visit **http://localhost:8080/bezkoder-documentation**, the browser will redirect you to **http://localhost:8080/swagger-ui/index.html**
+
+– **packages-to-scan=packageA,packageB**: list of packages to scan with comma separated. We also have packages-to-exclude, paths-to-match, paths-to-exclude.
+
+– **swagger-ui.tryItOutEnabled** if you want to enable “**Try it out**” section by default.
+
+![image](https://github.com/luiscoco/spring-boot-swagger-3-example-master/assets/32194879/1ae20ce2-546e-4abe-a8ae-3919ac8a5076)
+
+– **swagger-ui.operationsSorter**: ‘**alpha**’ (sort by paths **alphanumerically**), ‘**method**’ (sort by **HTTP method**) or a function.
+
+– **swagger-ui.tagsSorter**: ‘**alpha**’ (sort by paths **alphanumerically**) or a **function**.
+
+– **swagger-ui.filter**: true/false to enable or disable filter the tagged operations. 
+
+We can set a string, the filtering will be enabled using that string as the filter expression which is case sensitive matching anywhere inside the tag.
+
+You can also use enable-spring-security, enable-hateoas, enable-data-rest…
+
+For more properties and details, please visit **Springdoc-openapi Properties**: https://springdoc.org/
 
 ## 3. How to run the application type this command in VSCode Terminal Window:
 
