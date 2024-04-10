@@ -535,4 +535,9 @@ To access the API docs navigate to this URL: **http://localhost:8080/swagger-ui/
 
 ![image](https://github.com/luiscoco/spring-boot-swagger-3-example-master/assets/32194879/edc18735-c0a4-40eb-92e7-da5af89978a2)
 
+Also we can navigate to the OpenAPI docs
+
+http://localhost:8080/bezkoder-api-docs
+
+![image](https://github.com/luiscoco/spring-boot-swagger-3-example-master/assets/32194879/1578ff1f-728b-49ef-aabf-0df5ff5679e3)
 
