@@ -405,6 +405,8 @@ public class TutorialController {
 
 ### 2.7. OpenAPI docs configuration
 
+![image](https://github.com/luiscoco/spring-boot-swagger-3-example-master/assets/32194879/039790ee-87c2-409d-8a95-4dfe8291ea36)
+
 **OpenAPIConfig**
 
 ```java
@@ -465,4 +467,13 @@ public class OpenAPIConfig {
 ```
 mvn spring-boot:run
 ```
+
+To access the API docs navigate to this URL: **http://localhost:8080/swagger-ui/index.html**
+
+![image](https://github.com/luiscoco/spring-boot-swagger-3-example-master/assets/32194879/46d626bb-9ba4-4b62-9b37-2a04bedd9514)
+
+![image](https://github.com/luiscoco/spring-boot-swagger-3-example-master/assets/32194879/6950d645-4012-4cef-99b6-34115a759608)
+
+![image](https://github.com/luiscoco/spring-boot-swagger-3-example-master/assets/32194879/edc18735-c0a4-40eb-92e7-da5af89978a2)
+
 
